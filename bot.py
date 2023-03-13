@@ -98,7 +98,8 @@ class Bot(Client):
 app = Bot()
 app.run()
 
-if name == 'main': 
+if __name__ == '__main__':
+    #import os ( above )
 
     port = int(os.environ.get('PORT', 5000))
 
